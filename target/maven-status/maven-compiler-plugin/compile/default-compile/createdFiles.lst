@@ -1,0 +1,9 @@
+com\proteinTracker\tests\BadTestsCategory.class
+com\proteinTracker\tests\ParemterizedTests.class
+com\proteinTracker\tests\GoodTestsCategory.class
+com\proteinTracker\tests\ProteinTrackerSuite.class
+com\proteinTracker\tests\ConsoleRunner.class
+com\proteinTracker\tests\HelloJUnitTest.class
+com\proteinTracker\tests\TrackingServiceTheories.class
+com\proteinTracker\tests\TrackingServiceTests.class
+com\proteinTracker\tests\GoodTestsSuite.class

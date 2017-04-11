@@ -9,13 +9,14 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
+import com.protein.NotifierStub;
 import com.protein.TrackingService;
 
 @RunWith(Parameterized.class)
 public class ParemterizedTests {
 	
 	
-	private static TrackingService service = new TrackingService();
+	private static TrackingService service = new TrackingService(new NotifierStub());
 	private int input;
 	private int expected;
 	

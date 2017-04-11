@@ -7,6 +7,7 @@ import org.junit.experimental.theories.Theories;
 import org.junit.experimental.theories.Theory;
 import org.junit.runner.RunWith;
 
+import com.protein.NotifierStub;
 import com.protein.TrackingService;
 
 @RunWith(Theories.class)
@@ -21,7 +22,7 @@ public class TrackingServiceTheories {
 	
 	@Theory
 	public void positiveValuesShouldAlwyasHavePositiveTotals(int value){
-		TrackingService service = new TrackingService();
+		TrackingService service = new TrackingService(new NotifierStub());
 		service.addProtein(value);
 		
 		Assume.assumeTrue(value > 0);
